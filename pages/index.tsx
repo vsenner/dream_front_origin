@@ -35,17 +35,14 @@ const Home: FC = () => {
   };
 
   const onClickShare: MouseEventHandler<HTMLSpanElement> = async (e) => {
-    console.log('CLICKED');
-    if(navigator.share) {
-      console.log('INSIDE SHARE');
-      await navigator.share({
-        text: 'Share Collection',
-        title: 'Share Collection',
-        url: window.location.href + `/${3232}`
-      })
-    }else{
-      console.log('OUTSIDE SHARE');
-    }
+    console.log('HERE!!!');
+    await navigator.share({
+      text: 'Share Collection',
+      title: 'Share Collection',
+      url: window.location.href + `/${3232}`
+    }).then((r) => {
+      console.log('GOOD!');
+    })
     // }else {
     //   setCopy(true);
     //   await navigator.clipboard.writeText(window.location.href + `/${54353}`);
