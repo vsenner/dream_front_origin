@@ -22,7 +22,7 @@ const Result = () => {
   const { name, expired, _id, orders } = useAppSelector((state) => state.currentCollection);
 
 
-  if (!name) router.push("/");
+  // if (!name) router.push("/");
 
   const onClickAddCategories = () => {
     router.push("/add-category");
@@ -33,21 +33,20 @@ const Result = () => {
   };
 
   const onClickShare: MouseEventHandler<HTMLSpanElement> = async (e) => {
-    if(isMobile){
+    if(navigator.share) {
       await navigator.share({
         text: 'Share Collection',
         title: 'Share Collection',
         url: window.location.href + `/${3232}`
       })
-    }else {
-      setCopy(true);
-      await navigator.clipboard.writeText(window.location.href + `/${54353}`);
-      setTimeout(() => {
-        setCopy(false);
-      }, 1000);
     }
-
-
+    // }else {
+    //   setCopy(true);
+    //   await navigator.clipboard.writeText(window.location.href + `/${54353}`);
+    //   setTimeout(() => {
+    //     setCopy(false);
+    //   }, 1000);
+    // }
   };
 
   return (
@@ -87,7 +86,7 @@ const Result = () => {
 export async function getStaticProps(context: any) {
   return {
     props: {
-      protected: false
+      // protected: false
     }
   };
 }
