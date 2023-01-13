@@ -1,7 +1,7 @@
 import Header from '../src/components/Header';
 import Button, { ButtonType } from '../src/components/ui-kit/Button';
 import HomeNew from '../src/components/HomeNew';
-import { FC } from 'react';
+import { FC, MouseEventHandler } from 'react';
 import ProfileSVG from '../src/components/Icons/profile';
 import HomeImg from '../public/img/home.png';
 import styles from '../styles/Home.module.css';
@@ -34,15 +34,36 @@ const Home: FC = () => {
     router.push('/dashboard');
   };
 
+  const onClickShare: MouseEventHandler<HTMLSpanElement> = async (e) => {
+    console.log('CLICKED');
+    if(navigator.share) {
+      console.log('INSIDE SHARE');
+      await navigator.share({
+        text: 'Share Collection',
+        title: 'Share Collection',
+        url: window.location.href + `/${3232}`
+      })
+    }else{
+      console.log('OUTSIDE SHARE');
+    }
+    // }else {
+    //   setCopy(true);
+    //   await navigator.clipboard.writeText(window.location.href + `/${54353}`);
+    //   setTimeout(() => {
+    //     setCopy(false);
+    //   }, 1000);
+    // }
+  };
+
+
   return (
     <div>
       <div className={styles.home_container}>
-
         <div className={styles.home_header}>
           <Header withLogo={true}>
             {isAuth && <ProfileSVG onClick={onClickProfile} />}
             {!isAuth && (
-              <span className={styles.home_signup} onClick={onClickLogin}>
+              <span className={styles.home_signup} onClick={onClickShare}>
               Sign Up
             </span>
             )}
