@@ -1,0 +1,60 @@
+.terms {
+}
+
+.terms_container {
+  padding: 0 24px;
+  margin-top: 16px;
+}
+
+.terms_header {
+}
+
+.terms_header_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.25px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.terms_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+}
+
+.terms_text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 0.76);
+}
+
+.terms_text_big {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.terms_text ul {
+  list-style-type: decimal;
+  padding-left: 12px;
+}
+
+.terms_title {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.terms_title_big {
+  font-size: 12px;
+}

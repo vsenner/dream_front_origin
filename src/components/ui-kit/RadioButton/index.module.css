@@ -1,0 +1,20 @@
+.radio_button {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #a7b0c0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio_button_active {
+  border: 1px solid #007fff;
+}
+
+.radio_button_content {
+  width: 12px;
+  height: 12px;
+  background-color: #007fff;
+  border-radius: 50%;
+}

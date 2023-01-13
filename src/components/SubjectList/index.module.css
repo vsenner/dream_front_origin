@@ -1,0 +1,32 @@
+.subject_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.subject_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid #e7ecf3;
+}
+
+.subject_item_name {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+
+@media (min-width: 800px) {
+  .subject_item_name {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,13 @@
+.check_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+}
+
+.check_circle_selected {
+  background-color: #7adca7;
+}

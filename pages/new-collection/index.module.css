@@ -1,0 +1,154 @@
+.new_collection {
+}
+
+.new_collection_content {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new_collection_title {
+  margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.25px;
+  color: #000000;
+}
+
+.new_collection_control {
+  max-width: 100%;
+}
+.new_collection_input {
+  margin-top: 15px;
+}
+
+.new_collection_subtitle {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1d232e;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.new_collection_choose {
+  font-family: 'Inter', sans-serif;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.25px;
+  color: #000000;
+}
+
+.new_collection_choose_subtitle {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1d232e;
+  margin-bottom: 20px;
+}
+
+.new_collection_choose_subtitle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.footer_selected {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.25px;
+}
+
+.footer_continue {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.25px;
+}
+
+.footer_last {
+  display: none;
+}
+
+
+@media (min-width: 800px) {
+  .footer_last {
+    display: flex;
+  }
+
+  .new_collection_subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .new_collection_choose_subtitle {
+    max-width: 550px;
+    font-size: 18px;
+  }
+
+  .new_collection_choose {
+    font-size: 30px;
+  }
+
+  .new_collection_title {
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+  }
+  .new_collection_content {
+    padding: 0;
+    margin: auto;
+    max-width: 700px;
+  }
+
+  .new_collection_control {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .new_collection_choose {
+    font-size: 38px;
+  }
+  .new_collection_content {
+    max-width: 800px;
+  }
+  .new_collection_title {
+    font-size: 76px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .new_collection_choose {
+    font-size: 48px;
+  }
+  .new_collection_title {
+    font-size: 96px;
+  }
+  .new_collection_content {
+    max-width: 850px;
+  }
+}

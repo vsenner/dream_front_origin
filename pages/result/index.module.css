@@ -1,0 +1,123 @@
+.result {
+  height: 100%;
+}
+
+.result_container {
+  padding: 0 24px 30px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result_container_guest {
+  padding-bottom: 120px;
+}
+
+.result_header {
+  font-family: 'Inter', sans-serif;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.result_header:hover {
+  background-color: rgba(141, 141, 141, 0.12);
+  border-radius: 8px;
+
+  transition: all;
+  cursor: pointer;
+}
+
+.result_text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  margin-bottom: 24px;
+}
+
+.result_text:hover {
+  cursor: pointer;
+}
+
+.result_button {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.result_button_subtitle {
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: -0.25px;
+
+  color: #ffffff;
+}
+
+.result_guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.result_header_share::after {
+  position: absolute;
+  bottom: -6px;
+  right: 20px;
+  content: 'Copied';
+  font-size: 10px;
+  padding: 0 6px;
+  background-color: rgba(100, 100, 100, 0.14);
+  border-radius: 8px;
+}
+
+.result_guest_header {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  margin-right: 8px;
+}
+
+.result_guest_text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.25px;
+  color: #ffffff;
+}
+
+
+@media (min-width: 600px) {
+  .result_container {
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .result_container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .result_container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
